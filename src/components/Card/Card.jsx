@@ -3,19 +3,12 @@ import PropTypes from 'prop-types';
 
 const Card = ({ donation }) => {
     const { picture, title, category, category_bg, card_bg, text_color, } = donation;
-    const cardbg = {
-        
-    }
-    console.log(cardbg);
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img src={picture} alt="Shoes" /></figure>
-            <div style={{backgroundColor: card_bg}} className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                </div>
+        <div style={{ backgroundColor: card_bg }} className="card card-compact rounded-md cursor-pointer">
+            <figure><img src={picture} alt="Shoes" className='w-72 h-40' /></figure>
+            <div className='p-4'>
+                <p style={{ backgroundColor: category_bg, color: text_color }} className='py-1 px-[10px] inline rounded'>{category}</p>
+                <p style={{color: text_color }} className='pt-2'>{title}</p>
             </div>
         </div>
     );
