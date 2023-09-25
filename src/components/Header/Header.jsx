@@ -9,7 +9,7 @@ const Header = () => {
     </>
 
     const logo = <>
-        <img src="./public/images/logo.png" alt="logo" className="w-52" />
+        <img src="./public/images/logo.png" alt="logo" className="w-52"/>
     </>
 
     return (
