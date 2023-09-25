@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "picture": "https://i.ibb.co/NTyfrLM/47127-small.jpg",
         "title": "Clean water for children",
         "category": "Health",
@@ -12,7 +12,7 @@
         "price": "$290"
     },
     {
-        "id": "2",
+        "id": 2,
         "picture": "https://i.ibb.co/JFT50dt/Rectangle-4288.png",
         "title": "Good education",
         "category": "Education",
@@ -24,7 +24,7 @@
         "price": "$290"
     },
     {
-        "id": "3",
+        "id": 3,
         "picture": "https://i.ibb.co/rfphQRR/COMPRESSED-Master-of-social-work-in-australia.jpg",
         "title": "Used Clothing Drive",
         "category": "Clothing",
@@ -36,7 +36,7 @@
         "price": "$290"
     },
     {
-        "id": "4",
+        "id": 4,
         "picture": "https://i.ibb.co/P4BW6gF/close-up-people-holding-apples-bag.jpg",
         "title": "Better Food for Everyone",
         "category": "Food",
@@ -48,7 +48,7 @@
         "price": "$290"
     },
     {
-        "id": "5",
+        "id": 5,
         "picture": "https://i.ibb.co/P4BW6gF/close-up-people-holding-apples-bag.jpg",
         "title": "Better Food for Everyone",
         "category": "Food",
@@ -60,7 +60,7 @@
         "price": "$290"
     },
     {
-        "id": "6",
+        "id": 6,
         "picture": "https://i.ibb.co/rfphQRR/COMPRESSED-Master-of-social-work-in-australia.jpg",
         "title": "Used Clothing Drive",
         "category": "Clothing",
@@ -72,7 +72,7 @@
         "price": "$290"
     },
     {
-        "id": "7",
+        "id": 7,
         "picture": "https://i.ibb.co/JFT50dt/Rectangle-4288.png",
         "title": "Good education",
         "category": "Education",
@@ -84,7 +84,7 @@
         "price": "$290"
     },
     {
-        "id": "8",
+        "id": 8,
         "picture": "https://i.ibb.co/NTyfrLM/47127-small.jpg",
         "title": "Clean water for children",
         "category": "Health",
@@ -96,7 +96,7 @@
         "price": "$290"
     },
     {
-        "id": "9",
+        "id": 9,
         "picture": "https://i.ibb.co/NTyfrLM/47127-small.jpg",
         "title": "Clean water for children",
         "category": "Health",
@@ -108,7 +108,7 @@
         "price": "$290"
     },
     {
-        "id": "10",
+        "id": 10,
         "picture": "https://i.ibb.co/JFT50dt/Rectangle-4288.png",
         "title": "Good education",
         "category": "Education",
@@ -120,7 +120,7 @@
         "price": "$290"
     },
     {
-        "id": "11",
+        "id": 11,
         "picture": "https://i.ibb.co/rfphQRR/COMPRESSED-Master-of-social-work-in-australia.jpg",
         "title": "Used Clothing Drive",
         "category": "Clothing",
@@ -132,7 +132,7 @@
         "price": "$290"
     },
     {
-        "id": "12",
+        "id": 12,
         "picture": "https://i.ibb.co/P4BW6gF/close-up-people-holding-apples-bag.jpg",
         "title": "Better Food for Everyone",
         "category": "Food",
