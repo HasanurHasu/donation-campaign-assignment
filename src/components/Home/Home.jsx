@@ -23,7 +23,7 @@ const Home = () => {
 
         <div className="">
             <Search handleSubmit={handleSubmit}></Search>
-            <div className="max-w-6xl m-auto md:grid lg:grid-cols-4 md:grid-cols-2 gap-6 mt-20">
+            <div className="max-w-6xl lg:m-auto flex flex-col mx-8 md:grid lg:grid-cols-4 md:grid-cols-2 gap-6">
                 {
                     donations.map((donation, idx) => <Card key={idx} donation={donation}></Card>)
                 }
