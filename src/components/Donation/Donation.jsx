@@ -27,14 +27,14 @@ const Donation = () => {
 
 
     return (
-        <div className="max-w-6xl m-auto">
-            <div className="grid grid-cols-2 gap-5">
+        <div className="lg:max-w-6xl lg:m-auto mx-8 my-8 lg:my-8">
+            <div className="grid lg:grid-cols-2 gap-5">
                 {
                     submitDonation.map(donation => <SubmitDonationDetails key={donation.id} donation={donation}></SubmitDonationDetails>)
                 }
 
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-8 lg:mt-10">
                 <button
                     onClick={handleSeeAll}
                     className={`text-white font-semibold bg-[#009444] py-2 px-7 rounded-md ${showAll.length <= 4 && 'hidden'} ${btnShow || 'hidden'}`}>See All</button>
