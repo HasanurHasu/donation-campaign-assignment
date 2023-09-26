@@ -2,8 +2,8 @@
 import { PieChart, Pie, Cell } from "recharts";
 
 const data = [
-  { name: "Group A", value: 100 },
-  { name: "Group B", value: 50 }
+  { name: "Group A", value: 12 },
+  { name: "Group B", value: 12 }
 ];
 
 const COLORS = ["#FF444A", "#00C49F"];
@@ -30,7 +30,8 @@ const renderCustomizedLabel = ({
       textAnchor={x > cx ? "start" : "end"}
       dominantBaseline="central"
     >
-      {`${(percent * 100).toFixed(0)}%`}
+      {/* {`${(percent * 100).toFixed(0)}%`} */}
+      {`${(percent + percent * 100)}`}
     </text>
   );
 };
