@@ -54,8 +54,8 @@ const Statistics = () => {
           ))}
         </Pie>
       </PieChart>
-      <div className='flex gap-14'>
-        <div className='flex justify-center items-center gap-3'>
+      <div className='flex flex-col md:flex-row lg:flex-row gap-5 md:gap-10 lg:gap-14'>
+        <div className='flex  justify-center items-center gap-3'>
           <h1 className='text-lg text-[#0B0B0B]'>{data[1].name}</h1><p className='bg-[#00C49F] h-3 w-24 rounded-sm'>&apos;</p>
         </div>
         <div className='flex justify-center items-center gap-3'>

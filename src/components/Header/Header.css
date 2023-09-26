@@ -2,6 +2,10 @@ ul > a {
     margin-left: 50px;
 }
 
+.dropdown > ul > a{
+    padding: 5px 0px;
+}
+
 .active {
     color: red;
     text-decoration: underline;
