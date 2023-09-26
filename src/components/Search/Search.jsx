@@ -1,4 +1,6 @@
 
+import PropTypes from 'prop-types';
+
 const Search = ({handleSubmit}) => {
     return (
         <div style={{ backgroundImage: 'url("https://i.ibb.co/rfphQRR/COMPRESSED-Master-of-social-work-in-australia.jpg")', backgroundPosition: 'center' }}>
@@ -14,6 +16,10 @@ const Search = ({handleSubmit}) => {
             </div>
         </div>
     );
+};
+
+Search.propTypes = {
+    handleSubmit: PropTypes.func
 };
 
 export default Search;
