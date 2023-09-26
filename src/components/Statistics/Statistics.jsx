@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { PieChart, Pie, Cell, Tooltip, Legend, } from 'recharts';
+import { PieChart, Pie, Cell } from 'recharts';
 import { getStoredDonations } from '../utility/localStorage';
 
 const Statistics = () => {
@@ -49,8 +49,6 @@ const Statistics = () => {
           fill="#8884d8"
           dataKey="value"
         >
-          <Legend verticalAlign="top" height={36} />
-
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}
