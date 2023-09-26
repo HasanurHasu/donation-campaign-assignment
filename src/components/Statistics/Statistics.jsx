@@ -1,18 +1,30 @@
 
+import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, } from 'recharts';
+import { getStoredDonations } from '../utility/localStorage';
 
 const Statistics = () => {
   const donations = useLoaderData()
+  const [submitDonation, setSubmitDonation] = useState([])
+
+  useEffect(() => {
+    const storedDonationId = getStoredDonations()
+    if (donations.length > 0) {
+      const donationSubmit = donations.filter(donation => storedDonationId.includes(donation.id));
+      setSubmitDonation(donationSubmit);
+      
+    }
+  }, [donations])
   const data = [
-    { name: 'Group A', value: donations.length },
-    { name: 'Group B', value: 1 }
+    { name: 'Your Donation', value: submitDonation.length },
+    { name: 'Total Donation', value: donations.length }
   ];
 
-  const COLORS = ['#FFBB28', '#FF8042'];
+  const COLORS = ['#FF444A', '#00C49F'];
 
   const RADIAN = Math.PI / 180;
-  const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+  const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }) => {
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
     const x = cx + radius * Math.cos(-midAngle * RADIAN);
     const y = cy + radius * Math.sin(-midAngle * RADIAN);
@@ -33,7 +45,7 @@ const Statistics = () => {
           cy="50%"
           labelLine={false}
           label={renderCustomizedLabel}
-          outerRadius={200}
+          outerRadius={150}
           fill="#8884d8"
           dataKey="value"
         >
