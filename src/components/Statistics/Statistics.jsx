@@ -17,7 +17,7 @@ const Statistics = () => {
     }
   }, [donations])
   const data = [
-    { name: 'Total Donation', value: donations.length },
+    { name: 'Total Donation', value: donations.length - submitDonation.length },
     { name: 'Your Donation', value: submitDonation.length }
   ];
 
@@ -38,7 +38,7 @@ const Statistics = () => {
 
   return (
     <div className='flex justify-center flex-col items-center'>
-      <PieChart width={400} height={400}>
+      <PieChart width={380} height={380}>
         <Pie
           data={data}
           cx="50%"
@@ -56,10 +56,10 @@ const Statistics = () => {
       </PieChart>
       <div className='flex flex-col md:flex-row lg:flex-row gap-5 md:gap-10 lg:gap-14'>
         <div className='flex  justify-center items-center gap-3'>
-          <h1 className='text-lg text-[#0B0B0B]'>{data[1].name}</h1><p className='bg-[#00C49F] h-3 w-24 rounded-sm'>&apos;</p>
+          <h1 className='text-lg text-[#0B0B0B]'>{data[1].name}</h1><div className='bg-[#00C49F] h-3 w-24 rounded-sm'></div>
         </div>
         <div className='flex justify-center items-center gap-3'>
-          <h1 className='text-lg text-[#0B0B0B]'>{data[0].name}</h1><p className='bg-[#FF444A] h-3 w-24 rounded-sm'>&apos;</p>
+          <h1 className='text-lg text-[#0B0B0B]'>{data[0].name}</h1><div className='bg-[#FF444A] h-3 w-24 rounded-sm'></div>
         </div>
       </div>
     </div>
